@@ -16,7 +16,8 @@ app.use(express.json())
 
 const mySites = {}
 app.use(cors(corsOptions))
-
+// Ignore favicon requests
+app.get('/favicon.ico', (req, res) => res.status(204).end());
 app.get('/', (req,res) => {
     res.send("server is running")
 })
