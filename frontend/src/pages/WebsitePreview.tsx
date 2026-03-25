@@ -26,7 +26,7 @@ const WebsitePreview = () => {
    
    const fetchData = () => {
     setLoading(true)
-    axios.get(`http://localhost:5000/mySites/${id}`)
+    axios.get(`http://fortunate-adventure-production-a67b.up.railway.app/mySites/${id}`)
     .then((res) => {setLoading(false)
         setSiteDetails(res.data)})
     .catch((err) =>{setLoading(false)
