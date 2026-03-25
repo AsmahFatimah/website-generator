@@ -17,7 +17,7 @@ const Footer = () => {
             <a href='' onClick={scrollToTop} className="flex items-center mb-4 sm:mb-0">
                 {
                     imgs?.logo ? (
-                <><img src={imgs?.logo} className="h-7" alt={`${business?.Name}'s logo`} /><span className="text-heading self-center text-2xl font-medium whitespace-nowrap ml-1 capitalize">{site?.business.name}</span></>
+                <><img src={imgs?.logo} className="h-7" alt={`${business?.Name}'s logo`} /><span className="text-heading self-center text-2xl font-medium whitespace-nowrap ml-1 capitalize">{business?.Name}</span></>
 
                     ) : (
                 <span className="text-heading self-center text-2xl font-medium whitespace-nowrap ml-1 capitalize">{business?.Name}</span>
