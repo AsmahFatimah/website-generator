@@ -2,7 +2,6 @@
 const express = require('express');
 const cors = require('cors');
 const uuid = require ('uuid');
-const sites = require('../backend/Sites');
 const app = express()
 const PORT = process.env.PORT || 5000
 const corsOptions = {
