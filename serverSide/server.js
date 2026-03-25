@@ -40,7 +40,7 @@ app.get('https://fortunate-adventure-production-a67b.up.railway.app/mySites/:id'
 })
 
 
-app.get('/mySites', (req, res) => {
+app.get('https://fortunate-adventure-production-a67b.up.railway.app/mySites', (req, res) => {
     res.json(mySites)
 })
 
