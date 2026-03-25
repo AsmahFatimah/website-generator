@@ -18,8 +18,6 @@ app.use(express.json());
 // Temporary in-memory storage for sites
 const mySites = {};
 
-// Ignore favicon requests (browser automatically requests it)
-app.get('/favicon.ico', (req, res) => res.status(204).end());
 
 // Health check route
 app.get('/', (req, res) => res.send("Server is running"));
