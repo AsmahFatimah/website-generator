@@ -1,7 +1,7 @@
 // CommonJS style
 const express = require('express');
 const cors = require('cors');
-const uuid = require ('uuid');
+const {v4: uuid} = require ('uuid');
 const app = express()
 const PORT = process.env.PORT
 if (!PORT) {
