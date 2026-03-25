@@ -20,9 +20,7 @@ app.post('https://fortunate-adventure-production-a67b.up.railway.app/mySites', (
     const siteId = uuid.v4()
     mySites[siteId] = req.body
     const siteUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}/${siteId}`
-    // app.post('https://hook.eu2.make.com/j1q4c6qwcujnwimw6s8kuik7mamidmnt'), (req, res) => {
-    //     res.send(siteUrl)
-    // }
+   
     console.log(siteUrl)
 
     res.json({previewUrl: siteUrl, id:siteId})
