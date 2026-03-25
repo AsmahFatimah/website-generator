@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffff;
+  --primary-color: #222831;
+  --secondary-color: #393E46;
+  --tertiary-color: #D65A31;
+}
+.btn{
+  background-color: #D65A31;
+  color: #EEEEEE;
+}
