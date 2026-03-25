@@ -13,10 +13,10 @@ app.use(express.json())
 const mySites = {}
 app.use(cors(corsOptions))
 
-app.get('/', (req,res) => {
+app.get('https://fortunate-adventure-production-a67b.up.railway.app', (req,res) => {
     res.send("server is running")
 })
-app.post('/mySites', (req, res)=> {
+app.post('https://fortunate-adventure-production-a67b.up.railway.app/mySites', (req, res)=> {
     const siteId = uuid.v4()
     mySites[siteId] = req.body
     const siteUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}/${siteId}`
@@ -27,7 +27,7 @@ app.post('/mySites', (req, res)=> {
 
     res.json({previewUrl: siteUrl, id:siteId})
 })
-app.get('/mySites/:id', (req,res) =>{
+app.get('https://fortunate-adventure-production-a67b.up.railway.app/mySites/:id', (req,res) =>{
     const generatedWebsite = mySites[req.params.id]
     if(!generatedWebsite){
         res.status(404).send("site doesnt exist on this url")
