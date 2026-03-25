@@ -22,7 +22,7 @@ const mySites = {};
 app.get('/favicon.ico', (req, res) => res.status(204).end());
 
 // Health check route
-app.get('https://fortunate-adventure-production-a67b.up.railway.app', (req, res) => res.send("Server is running"));
+app.get('/', (req, res) => res.send("Server is running"));
 
 // Create a new site
 app.post('/mySites', (req, res) => {
