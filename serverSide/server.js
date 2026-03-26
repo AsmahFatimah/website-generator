@@ -32,7 +32,7 @@ app.post('/mySites', (req, res) => {
 
   const frontendSiteUrl = `https://website-generator-frontend-xqjm.vercel.app/site/${siteId}`
 
-  res.json({ previewUrl: siteUrl, id: siteId });
+  res.json({ previewUrl: siteUrl, id: siteId, frontendUrl:frontendSiteUrl });
 });
 
 // Get a single site by ID
