@@ -30,6 +30,8 @@ app.post('/mySites', (req, res) => {
   const siteUrl = `${req.protocol}://${req.get('host')}/mySites/${siteId}`;
   console.log("Generated site URL:", siteUrl);
 
+  const frontendSiteUrl = `https://website-generator-frontend-xqjm.vercel.app/site/${siteId}`
+
   res.json({ previewUrl: siteUrl, id: siteId });
 });
 
